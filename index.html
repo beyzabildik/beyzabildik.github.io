@@ -50,15 +50,15 @@ font-family: Arial, sans-serif;
   margin-bottom: 5px;
 }
 #gizleButton {
-  background-color: #cc5d34;
-  color: white;
+  background-color: rgb(225, 175, 209);
+  color: black;
   border: none;
   
 }
 
 #gosterButton {
-  background-color: #2f9147;
-  color: white;
+  background-color: rgb(225, 175, 209);
+  color: black;
   border: none;
 }
 .button-container {
@@ -91,6 +91,7 @@ font-family: Arial, sans-serif;
       
       </div>
   </nav> 
+ 
 
     <main role="main" class="container">
       <div class="jumbatron ">
@@ -165,36 +166,13 @@ font-family: Arial, sans-serif;
     </div>
 
     <div class="container">
-        <audio id="background-audio" src="./Dream A Little Dream Of Me(_v8I5vDewcZo_).m4a"></audio>
-        <div id="controls">
-        <button id="play-button">Müziği Çal</button>
-      <button id="pause-button">Müziği Durdur</button>
-         </div>
-      </div>
+      <audio id="background-audio" src="./Dream A Little Dream Of Me(_v8I5vDewcZo_).m4a"></audio>
+      <div id="controls">
+      <button id="play-button">Müziği Çal</button>
+    <button id="pause-button">Müziği Durdur</button>
+       </div>
     </div>
-    <div id="kitapListesi">
-      <div class="book">Dune:Çöl Gezegeni</div>
-      <div class="book">Warcross</div>
-      <div class="book">Yüzüklerin Efendisi</div>
-      <div class="book">Cesur Yeni Dünya</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-      <div class="book">Kitap 3</div>
-    </div>
-    <div class="button-container">
-      <button id="gizleButton">Listeyi Gizle</button>
-      <button id="gosterButton">Listeyi Göster</button>
-    </div>
-
-
+  </div>
     <div class="carousel ">
       <div class="carousel-item">
         <img src="./resimler/d.png" alt="Resim 1" height="600" width="100%" >
@@ -236,13 +214,40 @@ font-family: Arial, sans-serif;
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
       </div>
+      
     </div>
+    
+  <div id="kitapListesi">
+    
+    <div class="book">Dune:Çöl Gezegeni</div>
+    <div class="book">Warcross</div>
+    <div class="book">Yüzüklerin Efendisi</div>
+    <div class="book">Cesur Yeni Dünya</div>
+    <div class="book">Suç Ve Ceza</div>
+    <div class="book">Anna Karenina</div>
+    <div class="book">Genç Werther'in Acıları</div>
+    <div class="book">Uğultulu Tepeler</div>
+    <div class="book">İnsan Ne İle Yaşar</div>
+    <div class="book">Kurtlarla Koşan Kadınlar</div>
+    <div class="book">İyi Hissetmek</div>
+    <div class="book">Vazgeçebilmek</div>
+    <div class="book">Doğu Ekspresinde Cinayet</div>
+    <div class="book">Kuzuların Sessizliği</div>
+    <div class="book">Aklından Bir Sayı Tut</div>
+    
+  </div>
+  
+  
+
     
     
 
   <footer class="footer">
-    <div class="container">
-      <span class="text-muted">@2024 Kitap Türleri</span>
+    <div class="container"> 
+      <div class="button-container">
+        <button onclick="gizleListe()" id="gizleButton">Listeyi Gizle</button>
+        <button onclick="gosterListe()" id="gosterButton">Listeyi Göster</button>
+      </div>
       <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
       <button onclick="scrollToBottom()" id="scrollBottomBtn" title="Go to bottom">↓</button>
 </footer>

@@ -152,17 +152,17 @@ function initializeEventListeners() {
 document.addEventListener('DOMContentLoaded', initializeEventListeners);
 //liste için
 $(document).ready(function(){
-  // 1. Liste elemanlarına tıklandığında arka plan rengini değiştirme
+ 
   $(".book").click(function(){
-    $(this).css("background-color", "yellow");
+    $(this).css("background-color", "rgb(255, 230, 230)");
   });
 
-  // 2. Liste elemanlarını gizleme
+ 
   $("#gizleButton").click(function(){
     $("#kitapListesi").hide();
   });
 
-  // 3. Liste elemanlarını gösterme
+
   $("#gosterButton").click(function(){
     $("#kitapListesi").show();
   });

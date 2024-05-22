@@ -323,15 +323,3 @@ button {
   cursor: pointer;
 }
 
-/* İlgili butonların farklı renk stilleri */
-#gizleButton {
-  background-color: #ff6666;
-  color: white;
-  border: none;
-}
-
-#gosterButton {
-  background-color: #66cc66;
-  color: white;
-  border: none;
-}
