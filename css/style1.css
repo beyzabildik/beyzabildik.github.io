@@ -6,14 +6,6 @@ background-position: center;
 margin: 0;
 font-family: Arial, sans-serif;
 }
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: rgb(117, 84, 148);
-}
 
 .small-image {
     position: relative;
@@ -230,6 +222,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 /* burda bitti*/
 .carousel-item {
@@ -306,16 +299,16 @@ nav {
 }
 /*liste için*/
 #kitapListesi {
-  list-style-type: none; /* Liste işaretlerini kaldırır */
+  list-style-type: none; 
   padding: 0;
 }
 
 #kitapListesi li {
   padding: 10px;
-  border-bottom: 1px solid #ccc; /* Her kitap arasına ince bir çizgi ekler */
+  border-bottom: 1px solid #ccc; 
 }
 
-/* Buton stilleri */
+
 button {
   margin: 5px;
   padding: 10px 20px;
