@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -25,6 +25,44 @@ background-size: cover;
 background-position: center;
 margin: 0;
 font-family: Arial, sans-serif;
+}
+
+#play-button,
+  #pause-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #70077997;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+
+  #play-button:hover,
+  #pause-button:hover {
+    background-color: #3d045776;
+  }
+  .book {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+#gizleButton {
+  background-color: #cc5d34;
+  color: white;
+  border: none;
+  
+}
+
+#gosterButton {
+  background-color: #2f9147;
+  color: white;
+  border: none;
+}
+.button-container {
+  text-align: center; 
 }
       </style>
 
@@ -62,8 +100,8 @@ font-family: Arial, sans-serif;
         
       </div>
     </main>
-
-
+    
+   
     <div class="carousel-container">
       <div class="carousel-yazarlar">
         <div class="author">
@@ -126,7 +164,23 @@ font-family: Arial, sans-serif;
       
     </div>
 
-  
+    <div class="container">
+        <audio id="background-audio" src="./Dream A Little Dream Of Me(_v8I5vDewcZo_).m4a"></audio>
+        <div id="controls">
+        <button id="play-button">Müziği Çal</button>
+      <button id="pause-button">Müziği Durdur</button>
+         </div>
+      </div>
+    </div>
+    <div id="kitapListesi">
+      <div class="book">Kitap 1</div>
+      <div class="book">Kitap 2</div>
+      <div class="book">Kitap 3</div>
+    </div>
+    <div class="button-container">
+      <button id="gizleButton">Listeyi Gizle</button>
+      <button id="gosterButton">Listeyi Göster</button>
+    </div>
 
 
     <div class="carousel ">
@@ -170,7 +224,6 @@ font-family: Arial, sans-serif;
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
       </div>
-      
     </div>
     
     
@@ -178,13 +231,12 @@ font-family: Arial, sans-serif;
   <footer class="footer">
     <div class="container">
       <span class="text-muted">@2024 Kitap Türleri</span>
-      <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">^</button>
-    </div>
-    
-  </footer>
+      <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+      <button onclick="scrollToBottom()" id="scrollBottomBtn" title="Go to bottom">↓</button>
+</footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   

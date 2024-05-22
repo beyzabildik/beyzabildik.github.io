@@ -173,7 +173,7 @@ nav {
 /*yazar carouseli*/
 
 .carousel-container {
-    width: 90%; /* İstediğiniz genişliği ayarlayabilirsiniz */
+    width: 90%; 
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -222,6 +222,16 @@ nav {
  
 
 /*yazar carouselinin sonu*/
+
+/*müzik çaldırmak için*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* burda bitti*/
 .carousel-item {
     position: relative;
     text-align: center;
@@ -271,8 +281,57 @@ nav {
 #scrollTopBtn:hover {
     background-color: #8900b371;
 }
+#scrollBottomBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background-color: #c14ece;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#scrollBottomBtn:hover {
+  background-color: #8900b371;
+}
 .text-muted {
     display: inline-block;
     margin-right: 20px;
 }
+/*liste için*/
+#kitapListesi {
+  list-style-type: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+}
 
+#kitapListesi li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Her kitap arasına ince bir çizgi ekler */
+}
+
+/* Buton stilleri */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* İlgili butonların farklı renk stilleri */
+#gizleButton {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+}
+
+#gosterButton {
+  background-color: #66cc66;
+  color: white;
+  border: none;
+}

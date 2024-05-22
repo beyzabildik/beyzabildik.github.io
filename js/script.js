@@ -17,6 +17,14 @@ function scrollToTop() {
     window.scrollTo({top:0,behavior:"smooth"})
    
 }
+//Aşşağı kaydırma işlemi
+function scrollToBottom() {
+  window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+}
+
+
+
+
 //carousel
 ; $(document).ready(function () {
   var slideIndex = 0;
@@ -68,6 +76,9 @@ $(document).ready(function () {
 
 
 //navbar
+var toggle = document.getElementById('toggle');
+var menuIcon = document.querySelector('.menu-icon');
+
 toggle.addEventListener('change', function () {
   if (toggle.checked) {
     menuIcon.textContent = '✖';
@@ -75,6 +86,7 @@ toggle.addEventListener('change', function () {
     menuIcon.textContent = '☰';
   }
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('toggle');
@@ -109,4 +121,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Carousel konteynırını her 2 saniyede bir otomatik olarak sağa kaydır
   setInterval(scrollCarousel, 2000);
+});
+
+//arkadan müzik başlatmak için konulacak butonlarım
+function getAudioElement() {
+  return document.getElementById('background-audio');
+}
+
+
+function playAudio() {
+  const audio = getAudioElement();
+  audio.play();
+}
+
+
+function pauseAudio() {
+  const audio = getAudioElement();
+  audio.pause();
+}
+
+function initializeEventListeners() {
+  const playButton = document.getElementById('play-button');
+  const pauseButton = document.getElementById('pause-button');
+
+  playButton.addEventListener('click', playAudio);
+  pauseButton.addEventListener('click', pauseAudio);
+}
+
+
+document.addEventListener('DOMContentLoaded', initializeEventListeners);
+//liste için
+$(document).ready(function(){
+  // 1. Liste elemanlarına tıklandığında arka plan rengini değiştirme
+  $(".book").click(function(){
+    $(this).css("background-color", "yellow");
+  });
+
+  // 2. Liste elemanlarını gizleme
+  $("#gizleButton").click(function(){
+    $("#kitapListesi").hide();
+  });
+
+  // 3. Liste elemanlarını gösterme
+  $("#gosterButton").click(function(){
+    $("#kitapListesi").show();
+  });
 });
